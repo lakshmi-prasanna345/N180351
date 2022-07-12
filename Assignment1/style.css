@@ -1,0 +1,757 @@
+
+ footer {
+  	text-align: center;
+  	margin: 0;
+  	padding: 0px;
+ 		background-color: black;
+  	color: white;
+  	position: fixed;
+  	bottom: 0;
+  	width: 100%;
+  	height: 30px;
+}
+
+#lines{
+	font-size: 30px;
+	width: 30px;
+	height: 10px;
+	position: absolute;
+	top: 55px;
+	right: 5px;
+	float: right;
+}
+#lines a{
+	text-decoration: none;
+	color : #555;
+}
+h1{
+	position: absolute;
+	top: 10px;
+	left: 570px;
+	text-align: center;
+	font-variant: small-caps;
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+body{
+	/*background-image: url("im3.jpg");*/
+	background-color: #db9833;
+}
+ul#mainmenu{
+	z-index: 1;
+	list-style-type: none;
+	font-size: 9px;
+}
+ul#mainmenu li{
+	width : 337px;
+	text-align: center;
+	position: relative;
+	float: left;
+	
+}
+ul#mainmenu a{
+	text-decoration: none;
+	display: block;
+	width: 335px;
+	height: 35px;
+	line-height: 25px;
+	padding-right: 1px;
+	/*background-color: #555;*/
+	background-color: #2a6592;
+	color: white;
+	font-size: 21px;
+	border: 2px solid black;
+	}
+ul#mainmenu .submenu1 a{
+	background-color: #8ec3eb;
+	color: black;
+	border: 1px solid #555;
+	margin-top: -1px;
+}
+ul#mainmenu .submenu2 a{
+	margin-left: 20px;
+	color: black;
+	border: 1px solid #555;
+	margin-top: -1px;
+}
+ul#mainmenu li:hover>a{
+	background-color: #555;
+}
+ul#mainmenu li:hover a:hover{
+	background-color: #db9833;
+}
+ul#mainmenu ul.submenu1{
+	display: none;
+	position: absolute;
+	top: 36px;
+	left: 0px;
+}
+ul#mainmenu ul.submenu2{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 317px;
+}
+ul#mainmenu li:hover .submenu1{
+	display: block;
+}
+ul#mainmenu .submenu1 li:hover .submenu2{
+	display: block;
+}
+.darrow{
+	font-size: 12px;
+	position: absolute;
+	top: 10px;
+	right: 8px;	
+	color: white;
+}
+.rarrow{
+	font-size: 12px;
+	position: absolute;
+	top: 10px;
+	right: 8px;	
+	color: black;
+}
+
+/*side navigation bar*/
+
+#div2{
+	display: none;
+	position: absolute;
+	float: right;
+	right: 5px;
+}
+
+ul#mainmenu-side{
+	list-style-type: none;
+	font-size: 9px;
+}
+
+ul#mainmenu-side li{
+	width : 340px;
+	text-align: center;
+	
+}
+ul#mainmenu-side a{
+	text-decoration: none;
+	display: block;
+	width: 340px;
+	height: 35px;
+	line-height: 25px;
+	background-color: #2a6592;
+	color: white;
+	font-size: 21px;
+	margin-top: -1px;
+	border: 1px solid black;
+	}
+ul#mainmenu-side .submenu1-side a{
+	background-color: #8ec3eb;
+	color: black;
+	border: 1px solid #555;
+}
+ul#mainmenu-side .submenuX a{
+	background-color: #8ec3eb;
+	color: black;
+	border: 1px solid #555;
+}
+
+ul#mainmenu-side .submenu2-side a{
+	margin-left: 20px;
+	color: black;
+	border: 1px solid #555;
+}
+ul#mainmenu-side li:hover>a{
+	background-color: #555;
+}
+ul#mainmenu-side li:hover a:hover{
+	background-color: #db9833;
+}
+ul#mainmenu-side ul.submenu1-side{
+	display: none;
+	position: absolute;
+	top: 39px;
+	left: -342px;
+}
+ul#mainmenu-side ul.submenuX{
+	display: none;
+	position: absolute;
+	top: 75px;
+	left: -342px;
+}
+ul#mainmenu-side ul.submenu2-side{
+	display: none;
+	position: absolute;
+	top: 41px;
+	left: -362px;
+}
+ul#mainmenu-side li:hover .submenu1-side{
+	display: block;
+}
+ul#mainmenu-side li:hover .submenuX{
+	display: block;
+}
+ul#mainmenu-side .submenu1-side li:hover .submenu2-side{
+	display: block;
+}
+ul#mainmenu-side .submenuX li:hover .submenu2-side{
+	display: block;
+}
+.carrow{
+	font-size: 20px;
+	position: absolute;
+	top: 42px;
+	right: 323px;	
+	color: white;
+}
+.barrow{
+	font-size: 20px;
+	position: absolute;
+	top: 80px;
+	right: 323px;	
+	color: white;
+}
+
+/*Slide show*/
+
+
+
+.dot {
+	  margin-top: 100px;
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0px 2px;
+	  background-color: black;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+}
+.dot:nth-child(3){
+	margin-right: 0px;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  left: 345px;
+  padding: 7px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 5px;
+}
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  right: 345px;
+  padding: 7px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 4px;
+  user-select: none;
+}
+.prev:hover,.next:hover{
+	background-color: black;
+}
+
+
+#i1{
+	background-color: blue;
+}
+#divss1{
+	background: #db9833;
+	/*background: -webkit-linear-gradient(bottom, #a445b2, #fa4299);*/
+	width: 337.2px;
+	float: left;
+	overflow: scroll;
+	height: 500px;
+	overflow-x: hidden;
+	/*border: 1px solid #555;*/
+}
+#divss2{
+	/*background-image: url("im5.jpg");*/
+	z-index: -1;
+	width: 674px;
+	margin-top: 38px;
+	position: static;
+	margin-left: 0px;
+	height: 480px;
+}
+#divss3{
+	background :#db9833;
+	margin-top: -480px;
+	float: right;
+	/*border: 1px solid greenyellow;*/
+	width: 320px;
+	/*margin-left: 40px;*/
+	/*left: 30px;*/
+	margin-right: 17px;
+	/*position: absolute;*/
+	/*right: 0;*/
+	/*top: 165px;*/
+	/*border: 1px solid #555;*/
+	height: 500px;
+
+}
+
+/*Main division*/
+
+#divss{
+	/*display: block;*/
+	/*z-index: -1;*/
+	/*width: 100%;*/
+	/*margin-top: 40px;*/
+
+}
+
+
+/*searchbar*/
+
+#myInput {
+  width: 270px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin : 10px 0px 12px 10px;
+
+}
+
+#mainsearch1,#mainsearch2{
+	list-style-type: none;
+	padding: 0;
+	margin : 0;
+}
+/*#a445b2, #fa4299*/
+#mainsearch1 li a{
+	width: 100px;
+	margin : 0px 0px 0px 10px;
+	background-color: #f6d8ac;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 18px;
+	margin-top: -1px;
+	color: black;
+	display: block;
+	text-align: center;
+}
+#mainsearch2 li a{
+	width: 200px;
+	margin : 0px 0px 0px 30px;
+	background-color: #f6d8ac;
+	padding: 15px;
+	margin-top: -1px;
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	display: block;
+	border: 1px solid red;
+}
+#mainsearch1 li a:hover{
+	background-color: #eee;
+}
+#mainsearch2 li a:hover{
+	background-color: #eee;
+}
+
+#divss3 h2{
+	text-align: center;
+	color: red;
+	margin-bottom: 10px;
+}
+
+/*Student login division*/
+#Student-validity input[type=text],input[type=button]{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 0px 0;
+	display: inline-block;
+	border: 1px solid pink;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	font-size: 20px;
+
+}
+#Student-validity{
+	display: none;
+	margin: 0px 450px;
+	width: 20%;
+	background-color: #f6d8ac;
+	padding: 10px 80px ;
+}
+#Student-validity input[type=button]:hover{
+			background: #7e9a9a;
+		}
+#Student-validity-h2{
+	color: white;
+	text-align: center;
+	color: black;
+	margin-bottom: 20px;
+}
+
+/*Facutly login division*/
+
+#Faculty-validity input[type=text],input[type=button]{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 0px 0;
+	display: inline-block;
+	border: 1px solid pink;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+#Faculty-validity{
+	display: none;
+	margin: 0px 450px;
+	width: 20%;
+	background-color: #f6d8ac;
+	padding: 10px 80px ;
+}
+#Faculty-validity input[type=button]:hover{
+			background: #7e9a9a;
+		}
+#Faculty-validity-h2{
+	color: black;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+/*signup form*/
+
+		input[type=button]{
+			width: 100%;
+			padding: 12px 20px;
+			background:#2a6592;
+			color: white;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+		}		
+		#button1,#button2,#hobby{
+			margin-top: 10px;
+			background: #2a6592;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			padding: 2px;
+		}		
+		input[type=text],select{
+			width: 100%;
+			padding: 12px 20px;
+			margin: 0px 0;
+			display: inline-block;
+			border: 1px solid pink;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 5px;
+		}
+		#fake-input1{
+			width: 100%;
+			padding: 12px 20px;
+			margin: 0px 0;
+			display: inline-block;
+			border: 1px solid pink;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 5px;
+		}
+		#submitButton{
+			width: 100%;
+			padding: 12px 20px;
+			background: #2a6592;
+			opacity: 0.5;
+			color: white;
+			margin: 15px 0;
+			border: none;
+			border-radius: 4px;
+		}
+		#submitButton:hover{
+			background: #7e9a9a;
+
+		}
+		input[type=checkbox]{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		input[type=file]{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		#f-div1{
+			margin: 0px 400px;
+			width: 23%;
+			background-color: #f6d8ac;
+			padding: 10px 80px ;
+		}
+		#phno{
+			width: 22%;
+			padding: 6px 10px;
+			border: 1px solid pink;
+			border-radius: 4px;
+			margin-bottom: 5px;
+		}
+		#country_data{
+			width: 76.3%;
+			padding: 7px 11px;
+			border: 1px solid pink;
+			border-radius: 4px;
+			margin-bottom: 5px;
+		}
+		#.f-h2{
+			text-align: center;
+		}
+		#f-img,#f1-img{
+			margin-top: 7px;
+		}
+		.fake-input {
+			position: relative; 
+			width:307px; 
+		}
+		.fake-input #f-img{ 
+			position: absolute; 
+			top: 7px; 
+			right: 5px ;
+		}
+		.fake-input1 {
+			position: relative; 
+			width:307px; 
+		}
+		.fake-input1 #f1-img{ 
+			position: absolute; 
+			top: 7px; 
+			right: 5px ;
+		}
+		#agePrinter{
+			width: 100px;
+			height: 10px;
+		}
+
+
+/*login form*/
+
+#login-validity lid-val,#login-validity input[type=button]{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 0px 0;
+	display: inline-block;
+	border: 1px solid pink;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+
+#login-validity{
+	display: none;
+	margin: 0px 450px;
+	width: 20%;
+	background-color:#f6d8ac;
+	padding: 10px 80px ;
+}
+#login-validity input[type=button]:hover{
+	background: #7e9a9a;
+		}
+#login-validity-h2{
+	color: black;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+
+/*Image changer*/
+
+#imageChangerToText{
+	width :100px;
+	height:93px;
+}
+#imageChangerToText1{
+	width :300px;
+	height:93px;
+	display: none;
+}
+#imageChangerToText1 p{
+	padding-top: 3px;
+	padding: 20px;
+	font-size: 20px;
+	color: black;
+}
+
+
+
+
+@media only screen and (max-width:600px){
+	#map-division{
+		display: none;
+	}
+
+	h1{
+		left: 190px;
+	}
+	#imageChangerToText1 p{
+		font-size: 12px;
+	}
+
+
+/* main navigation bar*/
+
+ul#mainmenu li{
+	width : 120px;
+	
+}
+ul#mainmenu a{
+	width: 120px;
+	font-size: 10px;
+	}
+ul#mainmenu ul.submenu2{
+	left: 100px;
+}
+.darrow,.rarrow{
+	font-size: 8px;
+}
+
+/* side navigation bar */
+ul#mainmenu-side li{
+	width : 120px;
+}
+ul#mainmenu-side a{
+	width: 120px;
+	font-size: 12px;
+	}
+ul#mainmenu-side ul.submenu1-side{
+	left: -122px;
+}
+ul#mainmenu-side ul.submenuX{
+	left: -122px;
+}
+ul#mainmenu-side ul.submenu2-side{
+	left: -142px;
+}
+.carrow{
+	font-size: 12px;
+	right: 107px;
+}
+.barrow{
+	font-size:12px;
+	right: 107px;
+}
+
+/*slide show*/
+.dot:nth-child(3){
+	margin-right: -160px;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.prev {
+  left: 180px;
+  padding: 8px;
+}
+.next {
+  right: 20px;
+  padding: 8px;
+}
+#divss1{
+	width: 160px;
+	height: 500px;
+}
+#divss2{
+	width: 300px;
+	margin-left: 160px;
+}
+#divss3{
+	display: none;
+}
+
+
+
+/*searchbar*/
+
+#myInput {
+  width: 120px;
+}
+#mainsearch1 li a{
+	width: 100px;
+}
+
+
+/*login form*/
+
+#login-validity lid-val,#login-validity input[type=button]{
+	width: 100px;
+	font-size: 10px;
+}
+
+#login-validity{
+	margin: 0px 100px;
+	width: 200px;
+}
+
+
+/*Student login division*/
+#Student-validity input[type=text],input[type=button]{
+	width: 200px;
+	font-size: 10px;
+}
+#Student-validity{
+	margin: 0px 100px;
+	width: 200px;
+}
+/*Facutly login division*/
+
+#Faculty-validity input[type=text],input[type=button]{
+	width: 200px;
+	font-size: 10px;
+}
+#Faculty-validity{
+	margin: 0px 100px;
+	width: 200px;
+}
+
+
+
+/*signup form*/
+		#f-div1{
+			margin: 0px 100px;
+			width: 200px;
+			padding: 10px 50px ;
+		}
+		#phno{
+			width: 65px;
+		}
+		#country_data{
+			width: 130px;
+		}
+		.fake-input {
+			width:200px; 
+		}
+		#agePrinter{
+			width: 100px;
+			height: 20px;
+		}
+		#f-h2{
+			margin-bottom: 30px;
+		}
+
+		iframe{
+			width: 480px;
+		}
+
+
+}
+
+
+
